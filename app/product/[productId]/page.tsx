@@ -1,7 +1,22 @@
+import DetailClient from "@/app/components/detail/DetailClient";
+import { products } from "@/utils/Products";
 import React from "react";
 
-const Detail = () => {
-  return <div>Detail</div>;
+type DetailProps = {
+  productId?: string;
+};
+const Detail = ({ params }: { params: DetailProps }) => {
+  const { productId } = params;
+
+  //ürün bulduk
+  const product = products?.find((product) => product.id === productId);
+  console.log(product, "product");
+
+  return (
+    <div>
+      <DetailClient product={product} />
+    </div>
+  );
 };
 
 export default Detail;
