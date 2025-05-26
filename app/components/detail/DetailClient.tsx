@@ -4,6 +4,9 @@ import Image from "next/image";
 import PageContainer from "../containers/page";
 import Counter from "../general/Counter";
 import { useState } from "react";
+import { Rating } from "@mui/material";
+import Button from "../general/Button";
+import { Comme } from "next/font/google";
 
 export type CardProductProps = {
   id: string;
@@ -25,26 +28,63 @@ const DetailClient = ({ product }: { product: any }) => {
     inStock: product.inStock,
   });
 
+  const increaseFunc = () => {
+    if (cardProduct.quantity === 10) return;
+    setCardProduct((prev) => ({ ...prev, quantity: prev.quantity + 1 }));
+  };
+  const decreaseFunc = () => {
+    if (cardProduct.quantity === 1) return;
+    setCardProduct((prev) => ({ ...prev, quantity: prev.quantity - 1 }));
+  };
+
+  let productRating =
+    product?.reviews?.reduce((acc: number, item: any) => acc + item.rating, 0) /
+    product?.reviews?.length;
+
   return (
     <div className="my-10">
       <PageContainer>
-        <div className=" block md:flex gap-10 justify-center">
-          <div className="relative h-[400px] w-2/3 flex-1">
-            <Image src={product.image} fill alt={product.name} />
+        <div className="block md:flex gap-10 justify-center">
+          <div className="relative h-[200px] md:h-[400px]  w-[200px] md:w-[400px] flex-1">
+            <Image src={product.image} fill alt={product.image} />
           </div>
-          <div className="w-1/4 ">
+          <div className="w-1/2 spcace-y-3 ">
             <div className="text-xl md:text-2xl">{product.name}</div>
+            <Rating
+              className="my-2"
+              name="read-only"
+              value={productRating}
+              readOnly
+            />
             <div className="text-slate-500">{product.description}</div>
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-2">
               <div className="">STOK DURUMU:</div>
+
               {product.inStock ? (
                 <div className="text-green-500">Ürün Stokta Mevcut</div>
               ) : (
                 <div className="text-red-500">Ürün Stokda Yok</div>
               )}
             </div>
-            <Counter cardProduct={cardProduct} />
+            <Counter
+              increaseFunc={increaseFunc}
+              decreaseFunc={decreaseFunc}
+              cardProduct={cardProduct}
+            />
+            <div className="text-orange-600 text-lg md:text-2xl">
+              ${product.price}
+            </div>
+            <Button text="Sepete Ekle" small onClick={() => {}} />
           </div>
+        </div>
+        <div className="">
+          {product.reviews?.map((prd: any) => (
+            <Comment
+              prd={prd}
+              key={prd.id}
+              className="my-5 p-3 border rounded-lg"
+            />
+          ))}
         </div>
       </PageContainer>
     </div>
