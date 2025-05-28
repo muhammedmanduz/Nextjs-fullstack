@@ -9,7 +9,48 @@ export const products = [
     inStock: true,
     image:
       "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1693009283423",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959ee",
+        userId: "6475a1156bad4917456e6e1e",
+        productId: "1",
+        rating: 5,
+        comment: "Harika bir telefon, kamera kalitesi mükemmel!",
+        createdDate: "2023-07-06T06:08:33.067Z",
+        user: {
+          id: "6475af156bad4917456e6e1e",
+          name: "Ahmet Yılmaz",
+          email: "ahmet@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AACHTteoiCtILLBW1AooLIW9PJH-5825pBD1824_8LD=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-05-30T08:08:53.979Z",
+          updatedAt: "2023-05-30T08:08:53.979Z",
+          role: "USER",
+        },
+      },
+      {
+        id: "64a65a6158b470c6e06959ef",
+        userId: "6475a1156bad4917456e6e1f",
+        productId: "1",
+        rating: 4,
+        comment: "Çok iyi ama batarya ömrü beklediğim kadar uzun değil",
+        createdDate: "2023-07-10T08:15:22.123Z",
+        user: {
+          id: "6475af156bad4917456e6e1f",
+          name: "Ayşe Demir",
+          email: "ayse@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYJpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-05-31T09:10:54.321Z",
+          updatedAt: "2023-05-31T09:10:54.321Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "2",
@@ -21,7 +62,28 @@ export const products = [
     inStock: true,
     image:
       "https://images.samsung.com/is/image/samsung/p6pim/tr/2302/gallery/tr-galaxy-s23-sm-s911bzkgmea-534866717?$216_216_PNG$",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f0",
+        userId: "6475a1156bad4917456e6e20",
+        productId: "2",
+        rating: 5,
+        comment: "Kamera kalitesi inanılmaz!",
+        createdDate: "2023-07-15T12:30:45.678Z",
+        user: {
+          id: "6475af156bad4917456e6e20",
+          name: "Mehmet Kaya",
+          email: "mehmet@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AACHTteoiCtILLBW1AooLIW9PJH-5825pBD1824_8LD=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-05-30T08:08:53.979Z",
+          updatedAt: "2023-05-30T08:08:53.979Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "3",
@@ -33,7 +95,28 @@ export const products = [
     inStock: true,
     image:
       "https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f1",
+        userId: "6475a1156bad4917456e6e21",
+        productId: "3",
+        rating: 5,
+        comment: "Performansı müthiş, tasarım harika!",
+        createdDate: "2023-07-20T14:45:12.901Z",
+        user: {
+          id: "6475af156bad4917456e6e21",
+          name: "Elif Şahin",
+          email: "elif@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxZKpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-01T10:12:33.456Z",
+          updatedAt: "2023-06-01T10:12:33.456Z",
+          role: "ADMIN",
+        },
+      },
+    ],
   },
   {
     id: "4",
@@ -45,7 +128,28 @@ export const products = [
     inStock: true,
     image:
       "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-pro-13-2/images/kv/pc/kv.jpg",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f2",
+        userId: "6475a1156bad4917456e6e22",
+        productId: "4",
+        rating: 4,
+        comment: "Ekran kalitesi çok iyi, stylus kullanımı rahat",
+        createdDate: "2023-07-25T16:20:18.345Z",
+        user: {
+          id: "6475af156bad4917456e6e22",
+          name: "Can Bulut",
+          email: "can@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYKpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-02T11:14:44.567Z",
+          updatedAt: "2023-06-02T11:14:44.567Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "5",
@@ -57,7 +161,28 @@ export const products = [
     inStock: true,
     image:
       "https://www.sony.com.tr/image/1d7d5e2c6c6f9b8a5a0d0e0f0e0f0e0f?fmt=pjpeg&wid=1200&hei=1200",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f3",
+        userId: "6475a1156bad4917456e6e23",
+        productId: "5",
+        rating: 5,
+        comment: "Ses kalitesi ve gürültü önleme mükemmel!",
+        createdDate: "2023-07-30T18:35:27.890Z",
+        user: {
+          id: "6475af156bad4917456e6e23",
+          name: "Deniz Yıldız",
+          email: "deniz@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYLpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-03T12:16:55.678Z",
+          updatedAt: "2023-06-03T12:16:55.678Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "6",
@@ -69,7 +194,28 @@ export const products = [
     inStock: false,
     image:
       "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713657930%2C1660927566964",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f4",
+        userId: "6475a1156bad4917456e6e24",
+        productId: "6",
+        rating: 4,
+        comment: "Sağlık takip özellikleri çok başarılı",
+        createdDate: "2023-08-05T20:40:36.123Z",
+        user: {
+          id: "6475af156bad4917456e6e24",
+          name: "Ece Aydın",
+          email: "ece@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYMpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-04T13:18:11.789Z",
+          updatedAt: "2023-06-04T13:18:11.789Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "7",
@@ -81,7 +227,28 @@ export const products = [
     inStock: true,
     image:
       "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-12/specs-header.png",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f5",
+        userId: "6475a1156bad4917456e6e25",
+        productId: "7",
+        rating: 4,
+        comment: "Fiyat/performans ürünü, çok memnun kaldım",
+        createdDate: "2023-08-10T22:45:49.456Z",
+        user: {
+          id: "6475af156bad4917456e6e25",
+          name: "Burak Koç",
+          email: "burak@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYNpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-05T14:20:22.901Z",
+          updatedAt: "2023-06-05T14:20:22.901Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "8",
@@ -93,7 +260,28 @@ export const products = [
     inStock: true,
     image:
       "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/notebook-xps-9520-t-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4000&hei=4000&qlt=100,0&resMode=sharp2&size=4000,4000",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f6",
+        userId: "6475a1156bad4917456e6e26",
+        productId: "8",
+        rating: 5,
+        comment: "Profesyonel işler için mükemmel bir laptop",
+        createdDate: "2023-08-15T08:50:12.789Z",
+        user: {
+          id: "6475af156bad4917456e6e26",
+          name: "Gizem Tekin",
+          email: "gizem@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYOpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-06T15:22:33.123Z",
+          updatedAt: "2023-06-06T15:22:33.123Z",
+          role: "ADMIN",
+        },
+      },
+    ],
   },
   {
     id: "9",
@@ -105,7 +293,28 @@ export const products = [
     inStock: true,
     image:
       "https://images.samsung.com/is/image/samsung/p6pim/tr/2202/gallery/tr-galaxy-tab-s8-ultra-wifi-sm-x900nzaamea-thumb-530606128?$216_216_PNG$",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f7",
+        userId: "6475a1156bad4917456e6e27",
+        productId: "9",
+        rating: 4,
+        comment: "Çizim yapmak için harika bir tablet",
+        createdDate: "2023-08-20T10:55:36.234Z",
+        user: {
+          id: "6475af156bad4917456e6e27",
+          name: "Hakan Arslan",
+          email: "hakan@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYPpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-07T16:24:44.456Z",
+          updatedAt: "2023-06-07T16:24:44.456Z",
+          role: "USER",
+        },
+      },
+    ],
   },
   {
     id: "10",
@@ -117,6 +326,27 @@ export const products = [
     inStock: true,
     image:
       "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361",
-    reviews: [],
+    reviews: [
+      {
+        id: "64a65a6158b470c6e06959f8",
+        userId: "6475a1156bad4917456e6e28",
+        productId: "10",
+        rating: 5,
+        comment: "Kablosuz kulaklık deneyimini yeniden tanımlıyor",
+        createdDate: "2023-08-25T12:00:49.567Z",
+        user: {
+          id: "6475af156bad4917456e6e28",
+          name: "Irmak Su",
+          email: "irmak@gmail.com",
+          emailVerified: true,
+          image:
+            "https://lh3.googleusercontent.com/a/AGNmyxYQpJHkINpNzQZkQ7VYJXJmJnJmJnJmJnJmJnJm=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-08T17:26:55.678Z",
+          updatedAt: "2023-06-08T17:26:55.678Z",
+          role: "USER",
+        },
+      },
+    ],
   },
 ];

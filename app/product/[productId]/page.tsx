@@ -5,7 +5,7 @@ import React from "react";
 type DetailProps = {
   productId?: string;
 };
-const Detail = ({ params }: { params: DetailProps }) => {
+const Detail = async ({ params }: { params: DetailProps }) => {
   const { productId } = params;
 
   //ürün bulduk

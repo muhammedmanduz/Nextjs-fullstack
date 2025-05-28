@@ -25,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
       } ${outline ? "border" : "bg-blue-500 text-white"} `}
       disabled={disabled}
     >
+      {Icon && <Icon />}
       {text}
     </button>
   );
