@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Rating from "@mui/material/Rating";
 import textClip from "@/utils/TextClip";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const ProductCard = ({ product }: { product: any }) => {
   const router = useRouter();

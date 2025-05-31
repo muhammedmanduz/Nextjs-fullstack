@@ -3,7 +3,7 @@ import CartClient from "../components/cart/CartClient";
 
 const Cart = () => {
   return (
-    <div>
+    <div className="min-h-fit h-full w-full flex items-center justify-center">
       <CartClient />
     </div>
   );

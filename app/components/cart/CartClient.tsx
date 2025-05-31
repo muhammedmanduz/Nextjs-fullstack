@@ -1,7 +1,7 @@
 "use client";
 
 import UseCart from "@/hooks/UseCart";
-import PageContainer from "../containers/page";
+import PageContainer from "../containers/PageContainer";
 import Image from "next/image";
 import Button from "../general/Button";
 import { CardProductProps } from "../detail/DetailClient";
